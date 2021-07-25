@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lG1-UY-OfD">
-    <device id="retina5_9" orientation="landscape" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ECd-r6-Yg5">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -8,22 +8,37 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="ojg-cl-lET">
+            <objects>
+                <viewController id="ECd-r6-Yg5" customClass="ViewController" customModule="Q_001" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VWI-gk-I8F">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="JkR-AQ-MZu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ESm-MA-NrR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121" y="-1385"/>
+        </scene>
         <!--New View Controller-->
         <scene sceneID="vMd-r4-qcL">
             <objects>
                 <viewController id="lG1-UY-OfD" customClass="NewViewController" customModule="Q_001" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="J4k-aq-Wp8">
-                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3aX-UI-gj2">
-                                <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="768"/>
                                 <connections>
                                     <segue destination="VL5-oO-pbf" kind="embed" id="kiM-QH-2nZ"/>
                                 </connections>
                             </containerView>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Rim-07-T7Q">
-                                <rect key="frame" x="154" y="40" width="504" height="31"/>
+                                <rect key="frame" x="-64.666666666666657" y="84" width="504.33333333333326" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="1vY-G2-hao"/>
                                     <constraint firstAttribute="width" constant="500" id="CLS-vu-ws3"/>
@@ -33,21 +48,21 @@
                                 </connections>
                             </slider>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="001" translatesAutoresizingMaskIntoConstraints="NO" id="vwH-Qh-YaO">
-                                <rect key="frame" x="60" y="122" width="213" height="131"/>
+                                <rect key="frame" x="16" y="340.66666666666669" width="213" height="131"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="131" id="fkj-Mu-osl"/>
                                     <constraint firstAttribute="width" constant="213" id="gOI-2i-d8e"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="002" translatesAutoresizingMaskIntoConstraints="NO" id="MdD-qR-ujU">
-                                <rect key="frame" x="485" y="104" width="267" height="167"/>
+                                <rect key="frame" x="92" y="322.66666666666669" width="267" height="167"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="267" id="4CY-ok-rIc"/>
                                     <constraint firstAttribute="height" constant="167" id="e0r-Ic-3b2"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="003" translatesAutoresizingMaskIntoConstraints="NO" id="Gwd-zF-t6r">
-                                <rect key="frame" x="227" y="77.666666666666686" width="358" height="220"/>
+                                <rect key="frame" x="8.6666666666666572" y="296" width="358" height="220"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="220" id="Qip-J8-w4k"/>
                                     <constraint firstAttribute="width" constant="358" id="dMh-UW-ILd"/>
@@ -87,13 +102,14 @@
             <objects>
                 <viewController id="VL5-oO-pbf" customClass="MyContainerViewController" customModule="Q_001" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VE6-2W-XKo">
-                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="004" translatesAutoresizingMaskIntoConstraints="NO" id="wcW-Vv-4BW">
-                                <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="768"/>
                             </imageView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="UGq-Aw-jlY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="wcW-Vv-4BW" secondAttribute="trailing" id="4Rc-xy-1cw"/>
