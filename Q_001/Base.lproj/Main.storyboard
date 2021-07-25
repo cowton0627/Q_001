@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lG1-UY-OfD">
+    <device id="retina5_9" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--New View Controller-->
+        <scene sceneID="vMd-r4-qcL">
+            <objects>
+                <viewController id="lG1-UY-OfD" customClass="NewViewController" customModule="Q_001" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J4k-aq-Wp8">
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3aX-UI-gj2">
+                                <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                                <connections>
+                                    <segue destination="VL5-oO-pbf" kind="embed" id="kiM-QH-2nZ"/>
+                                </connections>
+                            </containerView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Rim-07-T7Q">
+                                <rect key="frame" x="154" y="40" width="504" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1vY-G2-hao"/>
+                                    <constraint firstAttribute="width" constant="500" id="CLS-vu-ws3"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="sliderChanged:" destination="lG1-UY-OfD" eventType="valueChanged" id="6Kd-ut-lrg"/>
+                                </connections>
+                            </slider>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="001" translatesAutoresizingMaskIntoConstraints="NO" id="vwH-Qh-YaO">
+                                <rect key="frame" x="60" y="122" width="213" height="131"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="131" id="fkj-Mu-osl"/>
+                                    <constraint firstAttribute="width" constant="213" id="gOI-2i-d8e"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="002" translatesAutoresizingMaskIntoConstraints="NO" id="MdD-qR-ujU">
+                                <rect key="frame" x="485" y="104" width="267" height="167"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="267" id="4CY-ok-rIc"/>
+                                    <constraint firstAttribute="height" constant="167" id="e0r-Ic-3b2"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="003" translatesAutoresizingMaskIntoConstraints="NO" id="Gwd-zF-t6r">
+                                <rect key="frame" x="227" y="77.666666666666686" width="358" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="Qip-J8-w4k"/>
+                                    <constraint firstAttribute="width" constant="358" id="dMh-UW-ILd"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3pw-C9-5ov"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Rim-07-T7Q" firstAttribute="top" secondItem="3pw-C9-5ov" secondAttribute="top" constant="40" id="0GU-Mw-ZNf"/>
+                            <constraint firstAttribute="bottom" secondItem="3aX-UI-gj2" secondAttribute="bottom" id="2V4-3v-WWj"/>
+                            <constraint firstItem="Rim-07-T7Q" firstAttribute="centerX" secondItem="J4k-aq-Wp8" secondAttribute="centerX" id="KoU-4p-oKE"/>
+                            <constraint firstItem="Gwd-zF-t6r" firstAttribute="centerX" secondItem="J4k-aq-Wp8" secondAttribute="centerX" id="ObY-Cn-F5E"/>
+                            <constraint firstItem="3aX-UI-gj2" firstAttribute="top" secondItem="3pw-C9-5ov" secondAttribute="top" id="RSl-RQ-HMG"/>
+                            <constraint firstItem="Gwd-zF-t6r" firstAttribute="centerY" secondItem="J4k-aq-Wp8" secondAttribute="centerY" id="Std-AV-k2h"/>
+                            <constraint firstItem="MdD-qR-ujU" firstAttribute="centerY" secondItem="J4k-aq-Wp8" secondAttribute="centerY" id="V2D-gy-ggS"/>
+                            <constraint firstItem="3pw-C9-5ov" firstAttribute="trailing" secondItem="MdD-qR-ujU" secondAttribute="trailing" constant="16" id="Ya5-TI-oKv"/>
+                            <constraint firstItem="vwH-Qh-YaO" firstAttribute="leading" secondItem="3pw-C9-5ov" secondAttribute="leading" constant="16" id="lLs-cY-Ecx"/>
+                            <constraint firstItem="3aX-UI-gj2" firstAttribute="leading" secondItem="J4k-aq-Wp8" secondAttribute="leading" id="pEi-1y-wLf"/>
+                            <constraint firstItem="vwH-Qh-YaO" firstAttribute="centerY" secondItem="J4k-aq-Wp8" secondAttribute="centerY" id="rsH-1Y-WU3"/>
+                            <constraint firstAttribute="trailing" secondItem="3aX-UI-gj2" secondAttribute="trailing" id="ymW-B7-XzM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myAceImageView" destination="vwH-Qh-YaO" id="SRx-bh-D6Y"/>
+                        <outlet property="myRedImageView" destination="MdD-qR-ujU" id="CdE-Wd-grn"/>
+                        <outlet property="mySadImageView" destination="Gwd-zF-t6r" id="Vln-Cm-Q6c"/>
+                        <outlet property="mySlider" destination="Rim-07-T7Q" id="WGd-Fm-wi6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BaX-Cl-LVo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="379.80295566502463" y="564"/>
+        </scene>
+        <!--My Container View Controller-->
+        <scene sceneID="Vmx-Ck-Qsv">
+            <objects>
+                <viewController id="VL5-oO-pbf" customClass="MyContainerViewController" customModule="Q_001" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VE6-2W-XKo">
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="004" translatesAutoresizingMaskIntoConstraints="NO" id="wcW-Vv-4BW">
+                                <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="wcW-Vv-4BW" secondAttribute="trailing" id="4Rc-xy-1cw"/>
+                            <constraint firstItem="wcW-Vv-4BW" firstAttribute="top" secondItem="VE6-2W-XKo" secondAttribute="top" id="NIy-P5-QSl"/>
+                            <constraint firstAttribute="bottom" secondItem="wcW-Vv-4BW" secondAttribute="bottom" id="Qwn-H7-3bU"/>
+                            <constraint firstItem="wcW-Vv-4BW" firstAttribute="leading" secondItem="VE6-2W-XKo" secondAttribute="leading" id="kOv-4y-FxV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mybackgroundView" destination="wcW-Vv-4BW" id="Jlq-3a-FIg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YcZ-yB-ZJn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380.54187192118229" y="1340"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="001" width="1034" height="610"/>
+        <image name="002" width="479" height="300"/>
+        <image name="003" width="640" height="395"/>
+        <image name="004" width="550" height="266"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
