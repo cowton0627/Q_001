@@ -13,7 +13,6 @@ class BackgroundViewController: UIViewController {
     @IBOutlet weak var headImageView: UIImageView!
     @IBOutlet weak var treeImageView: UIImageView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 //        let headImage = UIImage(named: "maskKin2")
@@ -26,8 +25,6 @@ class BackgroundViewController: UIViewController {
         treeImageView.image = UIImage(named: "f_25421351_1")
         treeImageView.mask = headImageView
         treeImageView.alpha = 0.4
-        
-        
 
     }
 
@@ -43,7 +40,6 @@ class BackgroundViewController: UIViewController {
 //
 //    typealias UIViewControllerType = ViewController
 //}
-//
 //
 //struct BackgroundViewControllerView_Previews: PreviewProvider {
 //    static var previews: some View {

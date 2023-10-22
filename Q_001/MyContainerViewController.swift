@@ -9,11 +9,10 @@ import UIKit
 
 class MyContainerViewController: UIViewController {
     @IBOutlet weak var mybackgroundView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         mybackgroundView.alpha = 0.4
-        
-        
     }
 
 }
